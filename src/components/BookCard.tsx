@@ -1,6 +1,6 @@
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ShoppingCart, Star } from "lucide-react";
+import { ShoppingCart, Star, BookOpen } from "lucide-react";
 
 interface BookCardProps {
   title: string;
@@ -12,7 +12,11 @@ interface BookCardProps {
 
 export const BookCard = ({ title, description, price, image, rating = 5 }: BookCardProps) => {
   return (
-    <Card className="group hover:shadow-[var(--shadow-warm)] transition-all duration-300 hover:-translate-y-2 overflow-hidden border-2">
+    <Card className="group hover:shadow-[var(--shadow-warm)] transition-all duration-300 hover:-translate-y-2 overflow-hidden border-2 animate-scale-in relative">
+      {/* Floating book icon decoration */}
+      <div className="absolute top-4 left-4 opacity-0 group-hover:opacity-100 transition-all duration-500 z-10">
+        <BookOpen className="w-6 h-6 text-[hsl(var(--gold))] animate-float" />
+      </div>
       <div className="relative overflow-hidden bg-gradient-to-br from-[hsl(var(--cream))] to-white">
         <img
           src={image}

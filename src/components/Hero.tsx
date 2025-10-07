@@ -4,13 +4,24 @@ import { BookOpen, Sparkles } from "lucide-react";
 
 export const Hero = () => {
   return (
-    <section className="relative min-h-[600px] lg:min-h-[700px] flex items-center overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-[hsl(var(--cream))] via-[hsl(var(--light-gold))] to-[hsl(var(--background))]" />
+    <section className="relative min-h-[600px] lg:min-h-[700px] flex items-center overflow-hidden bg-white">
+      {/* Subtle animated background effects */}
+      <div className="absolute inset-0 bg-gradient-to-br from-white via-white to-[hsl(var(--cream))]/30" />
+      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[hsl(var(--light-gold))]/10 rounded-full blur-3xl animate-pulse" />
+      <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-[hsl(var(--gold))]/5 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
+      
+      {/* Floating book icons */}
+      <div className="absolute top-20 left-10 animate-float">
+        <BookOpen className="w-8 h-8 text-[hsl(var(--gold))]/20" />
+      </div>
+      <div className="absolute bottom-32 right-20 animate-float-delayed">
+        <BookOpen className="w-12 h-12 text-[hsl(var(--warm-orange))]/15" />
+      </div>
       
       <div className="container mx-auto px-4 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center animate-fade-in">
           {/* Text Content */}
-          <div className="text-center lg:text-left space-y-6 py-12 lg:py-0">
+          <div className="text-center lg:text-left space-y-6 py-12 lg:py-0 animate-slide-in-left">
             <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full">
               <Sparkles className="w-4 h-4 text-[hsl(var(--gold))]" />
               <span className="text-sm font-medium text-[hsl(var(--burnt-orange))]">
@@ -54,7 +65,7 @@ export const Hero = () => {
           </div>
           
           {/* Hero Image */}
-          <div className="relative lg:order-last order-first">
+          <div className="relative lg:order-last order-first animate-slide-in-right">
             <div className="relative rounded-2xl overflow-hidden shadow-[var(--shadow-warm)]">
               <img
                 src={heroImage}

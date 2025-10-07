@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Star } from "lucide-react";
+import { Star, Quote } from "lucide-react";
 
 export const Testimonials = () => {
   const testimonials = [
@@ -24,9 +24,13 @@ export const Testimonials = () => {
   ];
 
   return (
-    <section className="py-20 bg-background">
-      <div className="container mx-auto px-4">
-        <div className="text-center max-w-3xl mx-auto mb-16">
+    <section className="py-20 bg-background relative overflow-hidden">
+      {/* Subtle background effects */}
+      <div className="absolute top-0 left-1/4 w-96 h-96 bg-[hsl(var(--gold))]/5 rounded-full blur-3xl" />
+      <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-[hsl(var(--warm-orange))]/5 rounded-full blur-3xl" />
+      
+      <div className="container mx-auto px-4 relative z-10">
+        <div className="text-center max-w-3xl mx-auto mb-16 animate-fade-in">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             O Que Dizem os
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[hsl(var(--gold))] to-[hsl(var(--warm-orange))]">
@@ -40,8 +44,11 @@ export const Testimonials = () => {
 
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {testimonials.map((testimonial, index) => (
-            <Card key={index} className="border-2 hover:shadow-[var(--shadow-card)] transition-all hover:-translate-y-2">
-              <CardContent className="pt-6">
+            <Card key={index} className="border-2 hover:shadow-[var(--shadow-card)] transition-all hover:-translate-y-2 animate-scale-in group relative overflow-hidden">
+              <div className="absolute top-4 right-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                <Quote className="w-12 h-12 text-[hsl(var(--gold))]" />
+              </div>
+              <CardContent className="pt-6 relative z-10">
                 <div className="flex gap-1 mb-4">
                   {Array.from({ length: testimonial.rating }).map((_, i) => (
                     <Star

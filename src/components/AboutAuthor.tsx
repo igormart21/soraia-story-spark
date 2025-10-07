@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Heart, Award, Users, BookMarked } from "lucide-react";
+import { Heart, Award, Users, BookMarked, BookOpen } from "lucide-react";
 
 export const AboutAuthor = () => {
   const highlights = [
@@ -11,9 +11,16 @@ export const AboutAuthor = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-background to-[hsl(var(--cream))]">
-      <div className="container mx-auto px-4">
-        <div className="text-center max-w-3xl mx-auto mb-16">
+    <section className="py-20 bg-gradient-to-b from-background to-[hsl(var(--cream))] relative overflow-hidden">
+      {/* Floating book decorations */}
+      <div className="absolute top-10 left-10 animate-float opacity-10">
+        <BookOpen className="w-16 h-16 text-[hsl(var(--gold))]" />
+      </div>
+      <div className="absolute bottom-10 right-10 animate-float-delayed opacity-10">
+        <BookOpen className="w-20 h-20 text-[hsl(var(--warm-orange))]" />
+      </div>
+      <div className="container mx-auto px-4 relative z-10">
+        <div className="text-center max-w-3xl mx-auto mb-16 animate-fade-in">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Conheça a
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[hsl(var(--gold))] to-[hsl(var(--warm-orange))]">
