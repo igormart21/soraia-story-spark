@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { Facebook, Instagram, Mail, Twitter } from "lucide-react";
+import { Mail } from "lucide-react";
+import { SiYoutube, SiInstagram, SiTiktok } from "react-icons/si";
 
 export const Footer = () => {
   return (
@@ -58,25 +59,28 @@ export const Footer = () => {
           
           <div className="flex gap-4">
             <a
-              href="#"
+              href="https://youtube.com/@soraiacontoselivros?si=wR-PwZuN8SY3rt1Z"
               className="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors"
-              aria-label="Facebook"
+              aria-label="YouTube"
+              target="_blank" rel="noopener noreferrer"
             >
-              <Facebook className="w-5 h-5" />
+              <SiYoutube className="w-5 h-5" />
             </a>
             <a
-              href="#"
+              href="https://www.instagram.com/soraiacontoselivros?igsh=MTJqNmo0bWswNHVtZw=="
               className="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors"
               aria-label="Instagram"
+              target="_blank" rel="noopener noreferrer"
             >
-              <Instagram className="w-5 h-5" />
+              <SiInstagram className="w-5 h-5" />
             </a>
             <a
-              href="#"
+              href="https://www.tiktok.com/@soraiahermesfasci?_t=ZM-90KD7q3tTI4&_r=1"
               className="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors"
-              aria-label="Twitter"
+              aria-label="TikTok"
+              target="_blank" rel="noopener noreferrer"
             >
-              <Twitter className="w-5 h-5" />
+              <SiTiktok className="w-5 h-5" />
             </a>
           </div>
         </div>
