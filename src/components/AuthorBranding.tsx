@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { BookOpen, Sparkles } from "lucide-react";
-import authorBrandImg from "../../assets/WhatsApp Imagwewe 2025-10-08 at 11.20.37.jpeg";
+import authorBrandImg from "../../assets/WhatsApp Image 2025-10sdds-08 at 11.20.38.jpeg";
 
 export const AuthorBranding = () => {
   return (
