@@ -4,11 +4,11 @@ import { BookOpen, Sparkles } from "lucide-react";
 
 export const Hero = () => {
   return (
-    <section className="relative min-h-[600px] lg:min-h-[700px] flex items-center overflow-hidden bg-white">
-      {/* Subtle animated background effects */}
-      <div className="absolute inset-0 bg-gradient-to-br from-white via-white to-[hsl(var(--cream))]/30" />
-      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[hsl(var(--light-gold))]/10 rounded-full blur-3xl animate-pulse" />
-      <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-[hsl(var(--gold))]/5 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
+    <section className="relative min-h-[600px] lg:min-h-[700px] flex items-center overflow-hidden bg-[hsl(var(--secondary))]">
+      {/* Background adjusted to a darker warm tone within palette */}
+      <div className="absolute inset-0 bg-gradient-to-br from-[hsl(var(--secondary))] via-[hsl(var(--burnt-orange))]/20 to-[hsl(var(--cream))]/10" />
+      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[hsl(var(--burnt-orange))]/15 rounded-full blur-3xl animate-pulse" />
+      <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-[hsl(var(--gold))]/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
       
       {/* Floating book icons */}
       <div className="absolute top-20 left-10 animate-float">
@@ -22,7 +22,7 @@ export const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center animate-fade-in">
           {/* Text Content */}
           <div className="text-center lg:text-left space-y-6 py-12 lg:py-0 animate-slide-in-left">
-            <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full">
+            <div className="inline-flex items-center gap-2 bg-white/70 backdrop-blur-sm px-4 py-2 rounded-full">
               <Sparkles className="w-4 h-4 text-[hsl(var(--gold))]" />
               <span className="text-sm font-medium text-[hsl(var(--burnt-orange))]">
                 Autora Bestseller
@@ -42,13 +42,17 @@ export const Hero = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button size="xl" variant="hero" className="group">
-                <BookOpen className="group-hover:rotate-12 transition-transform" />
-                Conhecer os Livros
-              </Button>
-              <Button size="xl" variant="outline">
-                Sobre a Autora
-              </Button>
+              <a href="#books">
+                <Button size="xl" variant="hero" className="group">
+                  <BookOpen className="group-hover:rotate-12 transition-transform" />
+                  Conhecer os Livros
+                </Button>
+              </a>
+              <a href="#about">
+                <Button size="xl" variant="outline">
+                  Sobre a Autora
+                </Button>
+              </a>
             </div>
             
             <div className="flex items-center gap-8 justify-center lg:justify-start pt-4">

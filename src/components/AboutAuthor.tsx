@@ -1,6 +1,8 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Heart, Award, Users, BookMarked, BookOpen } from "lucide-react";
+import authorPhoto from "../../assets/WhatsApp Image 2025gh-10-08 at 11.20.37.jpeg";
 
 export const AboutAuthor = () => {
   const highlights = [
@@ -27,8 +29,23 @@ export const AboutAuthor = () => {
               {" "}Autora
             </span>
           </h2>
+          <div className="flex items-center justify-center mb-6">
+            <div className="w-full max-w-sm rounded-xl overflow-hidden border-2 border-[hsl(var(--gold))]/20 shadow-[var(--shadow-warm)]">
+              <AspectRatio ratio={3/4}>
+                <img
+                  src={authorPhoto}
+                  alt="Foto da autora Soraia"
+                  className="h-full w-full object-cover object-top"
+                  loading="lazy"
+                />
+              </AspectRatio>
+            </div>
+          </div>
           <p className="text-lg text-muted-foreground">
             Soraia é uma escritora apaixonada por criar histórias que tocam corações e inspiram mudanças
+          </p>
+          <p className="text-base text-muted-foreground/90 mt-2">
+            Autora dedicada a narrativas que emocionam e inspiram transformações reais.
           </p>
         </div>
 
