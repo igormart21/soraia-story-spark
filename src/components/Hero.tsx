@@ -4,18 +4,14 @@ import { BookOpen, Sparkles } from "lucide-react";
 
 export const Hero = () => {
   return (
-    <section className="relative min-h-[600px] lg:min-h-[700px] flex items-center overflow-hidden bg-[hsl(var(--secondary))]">
-      {/* Background adjusted to a darker warm tone within palette */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[hsl(var(--secondary))] via-[hsl(var(--burnt-orange))]/20 to-[hsl(var(--cream))]/10" />
-      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[hsl(var(--burnt-orange))]/15 rounded-full blur-3xl animate-pulse" />
-      <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-[hsl(var(--gold))]/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
+    <section className="relative min-h-[600px] lg:min-h-[700px] flex items-center overflow-hidden bg-white">
       
       {/* Floating book icons */}
       <div className="absolute top-20 left-10 animate-float">
-        <BookOpen className="w-8 h-8 text-[hsl(var(--gold))]/20" />
+        <BookOpen className="w-8 h-8 text-[hsl(var(--gold))]/30" />
       </div>
       <div className="absolute bottom-32 right-20 animate-float-delayed">
-        <BookOpen className="w-12 h-12 text-[hsl(var(--warm-orange))]/15" />
+        <BookOpen className="w-12 h-12 text-[hsl(var(--warm-orange))]/20" />
       </div>
       
       <div className="container mx-auto px-4 relative z-10">
