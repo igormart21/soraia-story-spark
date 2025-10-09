@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/hero-soraia.jpg";
+import heroImage from "../../assets/WhatsApp Imagwewe 2025-10-08 at 11.20.37.jpeg";
 import { BookOpen, Sparkles } from "lucide-react";
 
 export const Hero = () => {
