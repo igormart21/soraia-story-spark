@@ -23,6 +23,7 @@ import vamosColorir from "../../assets/ChatGPT Image Oct 9, 2025, 07_31_49 AM.pn
 import joanaEnglish from "../../assets/ChatGPT Image Oct 9, 2025, 07_20_37 AM.png";
 import book3 from "@/assets/book-3.jpg";
 import infantilBanner from "@/assets/hero-soraia.jpg";
+import romanceBanner from "../../assets/ChatGPT Image Oct 9, 2025, 11_13_08 AM.png";
 
 const Index = () => {
   const books = [
@@ -462,7 +463,13 @@ História gostosa e leve de ler!`,
 
           {/* Romance Section */}
           <div className="max-w-7xl mx-auto mb-8">
-            <h3 className="text-2xl font-bold mb-6">Romance</h3>
+            <div className="relative rounded-xl overflow-hidden shadow-[var(--shadow-warm)] mb-8">
+              <img src={romanceBanner} alt="Categoria Romance" className="w-full h-48 md:h-64 object-cover" />
+              <div className="absolute inset-0 bg-black/20" />
+              <div className="absolute inset-0 flex items-center justify-center">
+                <h3 className="text-3xl md:text-4xl font-bold text-white drop-shadow">Romance</h3>
+              </div>
+            </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {romanceBooks.map((book, index) => (
                 <BookCard
