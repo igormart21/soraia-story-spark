@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { BookOpen, Sparkles } from "lucide-react";
 import authorBrandImg from "../../assets/WhatsApp Image 2025-10sdds-08 at 11.20.38.jpeg";
 
@@ -40,13 +41,15 @@ export const AuthorBranding = () => {
           </div>
 
           <div className="order-1 lg:order-2">
-            <div className="relative rounded-2xl overflow-hidden border-2 border-[hsl(var(--gold))]/20 shadow-[var(--shadow-warm)]">
-              <img
-                src={authorBrandImg}
-                alt="Soraia – branding pessoal com livros"
-                className="w-full h-[420px] object-cover object-center"
-                loading="lazy"
-              />
+            <div className="relative rounded-2xl overflow-hidden border-2 border-[hsl(var(--gold))]/20 shadow-[var(--shadow-warm)] bg-white">
+              <AspectRatio ratio={3/4}>
+                <img
+                  src={authorBrandImg}
+                  alt="Soraia – branding pessoal com livros"
+                  className="w-full h-full object-contain p-2"
+                  loading="lazy"
+                />
+              </AspectRatio>
               <div className="absolute -top-6 -right-6 w-24 h-24 bg-[hsl(var(--gold))] rounded-full blur-3xl opacity-20" />
               <div className="absolute -bottom-6 -left-6 w-28 h-28 bg-[hsl(var(--warm-orange))] rounded-full blur-3xl opacity-20" />
             </div>
