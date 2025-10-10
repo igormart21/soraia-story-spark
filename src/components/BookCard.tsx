@@ -4,6 +4,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { ShoppingCart, Star, BookOpen } from "lucide-react";
+import { Link } from "react-router-dom";
 
 interface Review {
   author: string;
@@ -15,6 +16,7 @@ interface Review {
 }
 
 interface BookCardProps {
+  id: string;
   title: string;
   description: string;
   price: string;
@@ -27,7 +29,7 @@ interface BookCardProps {
   reviewsInternational?: Review[];
 }
 
-export const BookCard = ({ title, description, price, image, rating = 5, backgroundClassName, innerBackgroundClassName, reviews = [], reviewsBrazil = [], reviewsInternational = [] }: BookCardProps) => {
+export const BookCard = ({ id, title, description, price, image, rating = 5, backgroundClassName, innerBackgroundClassName, reviews = [], reviewsBrazil = [], reviewsInternational = [] }: BookCardProps) => {
   const hasLegacyReviews = reviews.length > 0;
   const hasBrazilReviews = reviewsBrazil.length > 0;
   const hasInternationalReviews = reviewsInternational.length > 0;
@@ -86,12 +88,11 @@ export const BookCard = ({ title, description, price, image, rating = 5, backgro
       </div>
       
       <CardHeader>
-        <CardTitle className="text-xl group-hover:text-[hsl(var(--gold))] transition-colors">
-          {title}
-        </CardTitle>
-        <CardDescription className="whitespace-pre-line leading-relaxed">
-          {description}
-        </CardDescription>
+        <Link to={`/book/${id}`} target="_blank" rel="noopener noreferrer">
+          <CardTitle className="text-xl group-hover:text-[hsl(var(--gold))] transition-colors cursor-pointer hover:underline">
+            {title}
+          </CardTitle>
+        </Link>
       </CardHeader>
       
       <CardFooter className="flex items-center justify-between pt-4 border-t">
