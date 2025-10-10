@@ -371,7 +371,7 @@ Ao longo dessa jornada, Maria vive com cada parte de si: a mãe, a filha, a amig
         title: "Um Livro que Inspira…. Maravilhoso",
         date: "7 de agosto de 2025",
         country: "Canadá",
-        content: "As "Marias" que habitam essa história são espelhos de tantas de nós …..\n\nUm livro sensacional, que aquece o coração e nos lembra que recomeçar não é fracasso, é coragem. Lindo lindo !!!",
+        content: "As \"Marias\" que habitam essa história são espelhos de tantas de nós …..\n\nUm livro sensacional, que aquece o coração e nos lembra que recomeçar não é fracasso, é coragem. Lindo lindo !!!",
       },
       {
         author: "Fasciani",
