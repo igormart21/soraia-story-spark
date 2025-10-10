@@ -20,7 +20,8 @@ export const BookCard = ({ id, title, description, price, image, rating = 5, bac
   const navigate = useNavigate();
 
   const handleViewDetails = () => {
-    navigate(`/book/${id}`);
+    console.log('Navigating to:', `/book/${id}`);
+    window.location.href = `/book/${id}`;
   };
   return (
     <Card className="group hover:shadow-[var(--shadow-warm)] transition-all duration-300 hover:-translate-y-2 overflow-hidden border-2 animate-scale-in relative">
