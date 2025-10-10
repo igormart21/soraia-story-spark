@@ -23,7 +23,7 @@ import vamosColorir from "../../assets/ChatGPT Image Oct 9, 2025, 07_31_49 AM.pn
 import joanaEnglish from "../../assets/ChatGPT Image Oct 9, 2025, 07_20_37 AM.png";
 import book3 from "@/assets/book-3.jpg";
 import infantilBanner from "@/assets/hero-soraia.jpg";
-import romanceBanner from "../../assets/ChatGPT Image Oct 9, 2025, 11_13_08 AM.png";
+import romanceBanner from "@/assets/romance-banner.png";
 
 const Index = () => {
   const books = [
