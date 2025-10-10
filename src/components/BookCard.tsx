@@ -3,7 +3,7 @@ import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { ShoppingCart, Star, BookOpen } from "lucide-react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 interface BookCardProps {
   id: string;
@@ -17,6 +17,11 @@ interface BookCardProps {
 }
 
 export const BookCard = ({ id, title, description, price, image, rating = 5, backgroundClassName, innerBackgroundClassName }: BookCardProps) => {
+  const navigate = useNavigate();
+
+  const handleViewDetails = () => {
+    navigate(`/book/${id}`);
+  };
   return (
     <Card className="group hover:shadow-[var(--shadow-warm)] transition-all duration-300 hover:-translate-y-2 overflow-hidden border-2 animate-scale-in relative">
       {/* Floating book icon decoration */}
@@ -48,12 +53,15 @@ export const BookCard = ({ id, title, description, price, image, rating = 5, bac
         <CardTitle className="text-xl group-hover:text-[hsl(var(--gold))] transition-colors">
           {title}
         </CardTitle>
-        <Link to={`/book/${id}`}>
-          <Button variant="outline" size="sm" className="w-full mt-2 gap-2">
-            <BookOpen className="w-4 h-4" />
-            Ver Detalhes
-          </Button>
-        </Link>
+        <Button 
+          variant="outline" 
+          size="sm" 
+          className="w-full mt-2 gap-2"
+          onClick={handleViewDetails}
+        >
+          <BookOpen className="w-4 h-4" />
+          Ver Detalhes
+        </Button>
       </CardHeader>
       
       <CardFooter className="flex items-center justify-between pt-4 border-t">
