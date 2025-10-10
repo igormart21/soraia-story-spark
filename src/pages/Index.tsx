@@ -22,6 +22,8 @@ import lagartoDudu from "../../assets/ChatGPT Image Oct 9, 2025, 06_32_48 AM.png
 import vamosColorir from "../../assets/ChatGPT Image Oct 9, 2025, 07_31_49 AM.png";
 import joanaEnglish from "../../assets/ChatGPT Image Oct 9, 2025, 07_20_37 AM.png";
 import book3 from "@/assets/book-3.jpg";
+import infantilBanner from "@/assets/hero-soraia.jpg";
+import romanceBanner from "@/assets/romance-banner.png";
 
 const Index = () => {
   const books = [
@@ -434,12 +436,8 @@ História gostosa e leve de ler!`,
     },
   ];
 
-  const orderedBooks = books.slice().sort((a, b) => {
-    const ca = (a as any).category ?? "adult";
-    const cb = (b as any).category ?? "adult";
-    if (ca === cb) return 0;
-    return ca === "adult" ? -1 : 1;
-  });
+  const romanceBooks = books.filter((b: any) => (b.category ?? "adult") !== "kids");
+  const infantisBooks = books.filter((b: any) => (b.category ?? "adult") === "kids");
 
   return (
     <div className="min-h-screen">
@@ -463,15 +461,46 @@ História gostosa e leve de ler!`,
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-            {orderedBooks.map((book, index) => (
+          {/* Romance Section */}
+          <div className="max-w-7xl mx-auto mb-8">
+            <div className="relative rounded-xl overflow-hidden shadow-[var(--shadow-warm)] mb-8">
+              <img src={romanceBanner} alt="Categoria Romance" className="w-full h-48 md:h-64 object-cover" />
+              <div className="absolute inset-0 bg-black/20" />
+              <div className="absolute inset-0 flex items-center justify-center">
+                <h3 className="text-3xl md:text-4xl font-bold text-white drop-shadow">Romance</h3>
+              </div>
+            </div>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {romanceBooks.map((book, index) => (
+                <BookCard
+                  key={`romance-${index}`}
+                  {...book}
+                  backgroundClassName="bg-gradient-to-br from-[hsl(var(--cream))] to-white"
+                  innerBackgroundClassName="bg-[hsl(var(--cream))]"
+                />
+              ))}
+            </div>
+          </div>
+
+          {/* Infantis Section with banner */}
+          <div className="max-w-7xl mx-auto mt-16">
+            <div className="relative rounded-xl overflow-hidden shadow-[var(--shadow-warm)] mb-8">
+              <img src={infantilBanner} alt="Categoria Infantil" className="w-full h-48 md:h-64 object-cover" />
+              <div className="absolute inset-0 bg-black/20" />
+              <div className="absolute inset-0 flex items-center justify-center">
+                <h3 className="text-3xl md:text-4xl font-bold text-white drop-shadow">Infantis</h3>
+              </div>
+            </div>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {infantisBooks.map((book, index) => (
               <BookCard
-                key={index}
-                {...book}
-                backgroundClassName="bg-gradient-to-br from-[hsl(var(--cream))] to-white"
-                innerBackgroundClassName="bg-[hsl(var(--cream))]"
-              />
-            ))}
+                  key={`kids-${index}`}
+                  {...book}
+                  backgroundClassName="bg-gradient-to-br from-[hsl(var(--cream))] to-white"
+                  innerBackgroundClassName="bg-[hsl(var(--cream))]"
+                />
+              ))}
+            </div>
           </div>
         </div>
       </section>
