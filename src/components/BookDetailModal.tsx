@@ -57,14 +57,14 @@ export const BookDetailModal = ({ book, isOpen, onClose }: BookDetailModalProps)
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
+      <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto mx-4">
         <DialogHeader>
-          <DialogTitle className="text-2xl font-bold text-center">
+          <DialogTitle className="text-lg sm:text-2xl font-bold text-center">
             {book.title}
           </DialogTitle>
         </DialogHeader>
         
-        <div className="grid md:grid-cols-2 gap-8 mt-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-8 mt-4 sm:mt-6">
           {/* Book Image */}
           <div className="space-y-4">
             <div className="relative rounded-xl overflow-hidden shadow-[var(--shadow-warm)] border-2 border-[hsl(var(--gold))]/20">
@@ -85,24 +85,24 @@ export const BookDetailModal = ({ book, isOpen, onClose }: BookDetailModalProps)
           </div>
 
           {/* Book Details */}
-          <div className="space-y-6">
+          <div className="space-y-4 sm:space-y-6">
             <div>
-              <p className="text-lg text-muted-foreground leading-relaxed whitespace-pre-line">
+              <p className="text-sm sm:text-lg text-muted-foreground leading-relaxed whitespace-pre-line">
                 {book.description}
               </p>
             </div>
 
             <Card className="border-2 border-[hsl(var(--gold))]/20">
-              <CardHeader>
-                <CardTitle className="flex items-center justify-between">
+              <CardHeader className="pb-3 sm:pb-6">
+                <CardTitle className="flex items-center justify-between text-sm sm:text-base">
                   <span>Preço</span>
-                  <span className="text-2xl font-bold text-[hsl(var(--burnt-orange))]">
+                  <span className="text-lg sm:text-2xl font-bold text-[hsl(var(--burnt-orange))]">
                     {selectedFormat.price}
                   </span>
                 </CardTitle>
-                <CardDescription>ou 3x sem juros</CardDescription>
+                <CardDescription className="text-xs sm:text-sm">ou 3x sem juros</CardDescription>
               </CardHeader>
-              <CardContent className="space-y-4">
+              <CardContent className="space-y-3 sm:space-y-4">
                 {book.formats && book.formats.length > 0 && (
                   <FormatSelector
                     formats={book.formats}
@@ -110,10 +110,10 @@ export const BookDetailModal = ({ book, isOpen, onClose }: BookDetailModalProps)
                     onFormatChange={setSelectedFormat}
                   />
                 )}
-                <Button 
-                  variant="buy" 
-                  size="lg" 
-                  className="w-full gap-2"
+                <Button
+                  variant="buy"
+                  size="sm"
+                  className="w-full gap-2 text-sm"
                   onClick={handleBuyClick}
                 >
                   <ShoppingCart className="w-4 h-4" />

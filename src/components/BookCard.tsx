@@ -61,8 +61,8 @@ export const BookCard = ({ id, title, description, price, image, rating = 5, bac
         </div>
       </div>
       
-      <CardHeader className="h-32 flex flex-col justify-between">
-        <CardTitle className="text-lg group-hover:text-[hsl(var(--gold))] transition-colors h-14 flex items-start overflow-hidden">
+      <CardHeader className="h-28 sm:h-32 flex flex-col justify-between">
+        <CardTitle className="text-sm sm:text-lg group-hover:text-[hsl(var(--gold))] transition-colors h-12 sm:h-14 flex items-start overflow-hidden">
           <span className="block leading-tight" style={{
             display: '-webkit-box',
             WebkitLineClamp: 2,
@@ -84,7 +84,7 @@ export const BookCard = ({ id, title, description, price, image, rating = 5, bac
         </Button>
       </CardHeader>
       
-      <CardFooter className="pt-3 border-t space-y-4">
+      <CardFooter className="pt-2 sm:pt-3 border-t space-y-3 sm:space-y-4">
         {formats.length > 0 && (
           <div className="w-full">
             <FormatSelector
@@ -97,7 +97,7 @@ export const BookCard = ({ id, title, description, price, image, rating = 5, bac
         
         <div className="flex items-center justify-start w-full">
           <div>
-            <div className="text-lg font-bold text-[hsl(var(--burnt-orange))]">
+            <div className="text-base sm:text-lg font-bold text-[hsl(var(--burnt-orange))]">
               {selectedFormat.price}
             </div>
             <div className="text-xs text-muted-foreground">ou 3x sem juros</div>
