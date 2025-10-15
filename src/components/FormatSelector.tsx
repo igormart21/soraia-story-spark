@@ -19,7 +19,7 @@ export const FormatSelector = ({
       case 'ebook':
         return 'eBook';
       case 'capa-comum':
-        return 'Capa Comum';
+        return 'Livro Físico';
       default:
         return type;
     }
