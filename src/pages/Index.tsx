@@ -17,7 +17,8 @@ const Index = () => {
   const [selectedBook, setSelectedBook] = useState<Book | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   
-  const romanceBooks = books.filter((b) => (b.category ?? "adult") !== "kids");
+  const romanceBooks = books.filter((b) => (b.category ?? "adult") !== "kids" && !b.title.includes("English Edition"));
+  const romanceEnglishBooks = books.filter((b) => (b.category ?? "adult") !== "kids" && b.title.includes("English Edition"));
   const infantisBooks = books.filter((b) => (b.category ?? "adult") === "kids");
 
   const handleViewDetails = (book: Book) => {
@@ -61,17 +62,44 @@ const Index = () => {
                 <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white drop-shadow">Romance</h3>
               </div>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
-              {romanceBooks.map((book, index) => (
-                <BookCard
-                  key={`romance-${index}`}
-                  {...book}
-                  backgroundClassName="bg-gradient-to-br from-[hsl(var(--cream))] to-white"
-                  innerBackgroundClassName="bg-[hsl(var(--cream))]"
-                  onViewDetails={() => handleViewDetails(book)}
-                />
-              ))}
+            
+            {/* Romance em Português */}
+            <div className="mb-8">
+              <h4 className="text-xl sm:text-2xl font-bold mb-4 text-center text-[hsl(var(--burnt-orange))]">
+                Romance em Português
+              </h4>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
+                {romanceBooks.map((book, index) => (
+                  <BookCard
+                    key={`romance-pt-${index}`}
+                    {...book}
+                    backgroundClassName="bg-gradient-to-br from-[hsl(var(--cream))] to-white"
+                    innerBackgroundClassName="bg-[hsl(var(--cream))]"
+                    onViewDetails={() => handleViewDetails(book)}
+                  />
+                ))}
+              </div>
             </div>
+
+            {/* Romance em Inglês */}
+            {romanceEnglishBooks.length > 0 && (
+              <div className="mb-8">
+                <h4 className="text-xl sm:text-2xl font-bold mb-4 text-center text-[hsl(var(--burnt-orange))]">
+                  Romance in English
+                </h4>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
+                  {romanceEnglishBooks.map((book, index) => (
+                    <BookCard
+                      key={`romance-en-${index}`}
+                      {...book}
+                      backgroundClassName="bg-gradient-to-br from-[hsl(var(--cream))] to-white"
+                      innerBackgroundClassName="bg-[hsl(var(--cream))]"
+                      onViewDetails={() => handleViewDetails(book)}
+                    />
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
 
           {/* Infantis Section with banner */}
