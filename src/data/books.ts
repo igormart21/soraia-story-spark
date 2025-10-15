@@ -351,7 +351,7 @@ Come and be delighted by the lights of these two souls and embark on this unique
   {
     id: "baratinha-tata-bem-querer",
     title: "A BARATINHA TATÁ E O BEM-QUERER",
-    description: "Tatá é uma baratinha curiosa que descobre, em um dia cheio de aventuras, que o bem-querer começa dentro da gente. Entre cores, amigos e pequenas escolhas do cotidiano, ela aprende sobre carinho, respeito e a força de ser gentil consigo mesma e com o outro. Uma história lúdica e calorosa para ler em família, incentivar a autoestima das crianças e abrir conversas sobre empatia e amizade.",
+    description: `Tata, uma baratinha, acorda triste e se olha no espelho, questionando sua aparência e falta de amigos. Influenciada por lembranças do avô sobre o poder do querer, decide explorar isso. Ela encontra seu amigo, o ratão, que a aconselha a fazer boas ações. Tata começa a ajudar outros animais, como a formiga, o coelhinho, o besouro, a lagartixa e a girafa, e descobre que isso a faz feliz. Apesar das críticas de amigas fofoqueiras, ela continua ajudando. No final, Tata percebe que a verdadeira beleza vem da bondade e é celebrada pelos amigos em seu aniversário, confirmando que boas ações trazem verdadeira felicidade e amizade.`,
     price: "R$ 32,90",
     image: baratinhaTata,
     rating: 5,
