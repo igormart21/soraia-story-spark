@@ -102,7 +102,7 @@ export const BookDetail = () => {
                 <CardDescription>ou 3x sem juros</CardDescription>
               </CardHeader>
               <CardContent>
-                <Button size="lg" className="w-full gap-2">
+                <Button variant="buy" size="lg" className="w-full gap-2">
                   <ShoppingCart className="w-4 h-4" />
                   Comprar Agora
                 </Button>

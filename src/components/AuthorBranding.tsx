@@ -19,7 +19,7 @@ export const AuthorBranding = () => {
             </h3>
             <p className="text-lg text-muted-foreground">
               Histórias que nascem de experiências reais e viram livros que conectam pessoas.
-              A marca de <strong>Soraia</strong> é autenticidade, proximidade e propósito.
+              A marca de <strong>Soraia Hermes Fasciani</strong> é autenticidade, proximidade e propósito.
             </p>
             <Card className="p-6 border-2">
               <p className="text-base text-foreground">
@@ -45,7 +45,7 @@ export const AuthorBranding = () => {
               <AspectRatio ratio={3/4}>
                 <img
                   src={authorBrandImg}
-                  alt="Soraia – branding pessoal com livros"
+                  alt="Soraia Hermes Fasciani – branding pessoal com livros"
                   className="w-full h-full object-contain p-2"
                   loading="lazy"
                 />

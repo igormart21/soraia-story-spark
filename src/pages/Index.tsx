@@ -1,5 +1,7 @@
+import { useState } from "react";
 import { Hero } from "@/components/Hero";
 import { BookCard } from "@/components/BookCard";
+import { BookDetailModal } from "@/components/BookDetailModal";
 import { AboutAuthor } from "@/components/AboutAuthor";
 import { Testimonials } from "@/components/Testimonials";
 import { AuthorBranding } from "@/components/AuthorBranding";
@@ -7,13 +9,26 @@ import { Footer } from "@/components/Footer";
 import { Benefits } from "@/components/Benefits";
 import { FAQ } from "@/components/FAQ";
 import { CTASection } from "@/components/CTASection";
-import { books } from "@/data/books";
+import { books, Book } from "@/data/books";
 import infantilBanner from "@/assets/hero-soraia.jpg";
 import romanceBanner from "@/assets/romance-banner.png";
 
 const Index = () => {
+  const [selectedBook, setSelectedBook] = useState<Book | null>(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  
   const romanceBooks = books.filter((b) => (b.category ?? "adult") !== "kids");
   const infantisBooks = books.filter((b) => (b.category ?? "adult") === "kids");
+
+  const handleViewDetails = (book: Book) => {
+    setSelectedBook(book);
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    setSelectedBook(null);
+  };
 
   return (
     <div className="min-h-screen">
@@ -53,6 +68,7 @@ const Index = () => {
                   {...book}
                   backgroundClassName="bg-gradient-to-br from-[hsl(var(--cream))] to-white"
                   innerBackgroundClassName="bg-[hsl(var(--cream))]"
+                  onViewDetails={() => handleViewDetails(book)}
                 />
               ))}
             </div>
@@ -69,13 +85,14 @@ const Index = () => {
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {infantisBooks.map((book, index) => (
-              <BookCard
+                <BookCard
                   key={`kids-${index}`}
-                {...book}
-                backgroundClassName="bg-gradient-to-br from-[hsl(var(--cream))] to-white"
-                innerBackgroundClassName="bg-[hsl(var(--cream))]"
-              />
-            ))}
+                  {...book}
+                  backgroundClassName="bg-gradient-to-br from-[hsl(var(--cream))] to-white"
+                  innerBackgroundClassName="bg-[hsl(var(--cream))]"
+                  onViewDetails={() => handleViewDetails(book)}
+                />
+              ))}
             </div>
           </div>
         </div>
@@ -89,6 +106,13 @@ const Index = () => {
       <CTASection />
       <FAQ />
       <Footer />
+      
+      {/* Book Detail Modal */}
+      <BookDetailModal
+        book={selectedBook}
+        isOpen={isModalOpen}
+        onClose={handleCloseModal}
+      />
     </div>
   );
 };

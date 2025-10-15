@@ -8,7 +8,7 @@ export const Footer = () => {
       <div className="container mx-auto px-4 py-12">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div className="space-y-4">
-            <h3 className="text-2xl font-bold">Soraia</h3>
+            <h3 className="text-2xl font-bold">Soraia Hermes Fasciani</h3>
             <p className="text-white/80">
               Autora de histórias que transformam vidas e inspiram corações.
             </p>
@@ -54,7 +54,7 @@ export const Footer = () => {
 
         <div className="border-t border-white/20 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-white/80 text-sm">
-            © 2024 Soraia. Todos os direitos reservados.
+            © 2024 Soraia Hermes Fasciani. Todos os direitos reservados.
           </p>
           
           <div className="flex gap-4">

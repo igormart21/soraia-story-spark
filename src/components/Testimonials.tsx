@@ -6,7 +6,7 @@ export const Testimonials = () => {
     {
       name: "Maria Silva",
       location: "São Paulo, SP",
-      text: "Os livros da Soraia mudaram minha perspectiva sobre a vida. Cada página é uma jornada emocionante!",
+      text: "Os livros da Soraia Hermes Fasciani mudaram minha perspectiva sobre a vida. Cada página é uma jornada emocionante!",
       rating: 5,
     },
     {
@@ -18,7 +18,7 @@ export const Testimonials = () => {
     {
       name: "Ana Costa",
       location: "Belo Horizonte, MG",
-      text: "A escrita da Soraia é única. Me senti completamente imersa nas histórias, não consegui parar de ler!",
+      text: "A escrita da Soraia Hermes Fasciani é única. Me senti completamente imersa nas histórias, não consegui parar de ler!",
       rating: 5,
     },
   ];
@@ -38,7 +38,7 @@ export const Testimonials = () => {
             </span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            Milhares de vidas transformadas através das histórias de Soraia
+            Milhares de vidas transformadas através das histórias de Soraia Hermes Fasciani
           </p>
         </div>
 

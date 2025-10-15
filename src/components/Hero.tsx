@@ -33,7 +33,7 @@ export const Hero = () => {
             </h1>
             
             <p className="text-lg md:text-xl text-muted-foreground max-w-xl mx-auto lg:mx-0">
-              Descubra os livros de <strong>Soraia</strong> e embarque em jornadas inspiradoras 
+              Descubra os livros de <strong>Soraia Hermes Fasciani</strong> e embarque em jornadas inspiradoras 
               que tocam o coração e despertam a imaginação.
             </p>
             
@@ -69,7 +69,7 @@ export const Hero = () => {
             <div className="relative rounded-2xl overflow-hidden shadow-[var(--shadow-warm)]">
               <img
                 src={heroImage}
-                alt="Soraia, autora bestseller, em seu ambiente criativo cercada de livros"
+                alt="Soraia Hermes Fasciani, autora bestseller, em seu ambiente criativo cercada de livros"
                 className="w-full h-auto"
                 loading="eager"
               />

@@ -1,9 +1,11 @@
+import { useState } from "react";
 import { Card, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { ShoppingCart, Star, BookOpen } from "lucide-react";
-import { useNavigate } from "react-router-dom";
+import { FormatSelector } from "@/components/FormatSelector";
+import { BookFormat } from "@/data/books";
 
 interface BookCardProps {
   id: string;
@@ -14,14 +16,23 @@ interface BookCardProps {
   rating?: number;
   backgroundClassName?: string;
   innerBackgroundClassName?: string;
+  onViewDetails?: () => void;
+  formats?: BookFormat[];
 }
 
-export const BookCard = ({ id, title, description, price, image, rating = 5, backgroundClassName, innerBackgroundClassName }: BookCardProps) => {
-  const navigate = useNavigate();
+export const BookCard = ({ id, title, description, price, image, rating = 5, backgroundClassName, innerBackgroundClassName, onViewDetails, formats = [] }: BookCardProps) => {
+  const [selectedFormat, setSelectedFormat] = useState<BookFormat>(
+    formats.length > 0 ? formats[0] : { type: 'ebook', price, buyLink: '#' }
+  );
 
   const handleViewDetails = () => {
-    console.log('Navigating to:', `/book/${id}`);
-    window.location.href = `/book/${id}`;
+    if (onViewDetails) {
+      onViewDetails();
+    }
+  };
+
+  const handleBuyClick = () => {
+    window.open(selectedFormat.buyLink, '_blank');
   };
   return (
     <Card className="group hover:shadow-[var(--shadow-warm)] transition-all duration-300 hover:-translate-y-2 overflow-hidden border-2 animate-scale-in relative">
@@ -50,30 +61,56 @@ export const BookCard = ({ id, title, description, price, image, rating = 5, bac
         </div>
       </div>
       
-      <CardHeader>
-        <CardTitle className="text-xl group-hover:text-[hsl(var(--gold))] transition-colors">
-          {title}
+      <CardHeader className="h-32 flex flex-col justify-between">
+        <CardTitle className="text-lg group-hover:text-[hsl(var(--gold))] transition-colors h-14 flex items-start overflow-hidden">
+          <span className="block leading-tight" style={{
+            display: '-webkit-box',
+            WebkitLineClamp: 2,
+            WebkitBoxOrient: 'vertical',
+            overflow: 'hidden',
+            textOverflow: 'ellipsis'
+          }}>
+            {title}
+          </span>
         </CardTitle>
         <Button 
           variant="outline" 
           size="sm" 
-          className="w-full mt-2 gap-2"
+          className="w-full gap-1 text-xs"
           onClick={handleViewDetails}
         >
-          <BookOpen className="w-4 h-4" />
+          <BookOpen className="w-3 h-3" />
           Ver Detalhes
         </Button>
       </CardHeader>
       
-      <CardFooter className="flex items-center justify-between pt-4 border-t">
-        <div>
-          <div className="text-2xl font-bold text-[hsl(var(--burnt-orange))]">
-            {price}
+      <CardFooter className="pt-3 border-t space-y-4">
+        {formats.length > 0 && (
+          <div className="w-full">
+            <FormatSelector
+              formats={formats}
+              selectedFormat={selectedFormat}
+              onFormatChange={setSelectedFormat}
+            />
           </div>
-          <div className="text-xs text-muted-foreground">ou 3x sem juros</div>
+        )}
+        
+        <div className="flex items-center justify-start w-full">
+          <div>
+            <div className="text-lg font-bold text-[hsl(var(--burnt-orange))]">
+              {selectedFormat.price}
+            </div>
+            <div className="text-xs text-muted-foreground">ou 3x sem juros</div>
+          </div>
         </div>
-        <Button variant="buy" size="lg" className="gap-2">
-          <ShoppingCart className="w-4 h-4" />
+        
+        <Button 
+          variant="buy" 
+          size="sm" 
+          className="w-full gap-1 text-xs"
+          onClick={handleBuyClick}
+        >
+          <ShoppingCart className="w-3 h-3" />
           Comprar
         </Button>
       </CardFooter>

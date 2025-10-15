@@ -25,14 +25,21 @@ export interface Review {
   content: string;
 }
 
+export interface BookFormat {
+  type: 'ebook' | 'capa-comum';
+  price: string;
+  buyLink: string;
+}
+
 export interface Book {
   id: string;
   title: string;
   description: string;
-  price: string;
+  price: string; // Preço padrão (ebook)
   image: string;
   rating?: number;
   category?: string;
+  formats: BookFormat[];
   reviews?: Review[];
   reviewsBrazil?: Review[];
   reviewsInternational?: Review[];
@@ -41,7 +48,7 @@ export interface Book {
 export const books: Book[] = [
   {
     id: "cristal-estrela-viagem-luz",
-    title: "CRISTAL E ESTRELA: Viagem de Luz",
+    title: "CRISTAL E ESTRELA (Edição em português)",
     description: `Em "Cristal e Estrela", somos transportados para uma jornada mágica repleta de emoções encantadoras.
 
 Estrela e Cristal são duas almas destinadas a viverem no planeta Terra, onde encontram o amor e a fraternidade.
@@ -54,6 +61,18 @@ Venha se encantar com as luzes dessas duas almas e embarque nessa viagem única 
     price: "R$9,99",
     image: cristalEstrela,
     rating: 5,
+    formats: [
+      {
+        type: 'ebook',
+        price: 'R$ 12,90',
+        buyLink: 'https://amazon.com.br/cristal-estrela-ebook'
+      },
+      {
+        type: 'capa-comum',
+        price: 'R$ 89,90',
+        buyLink: 'https://amazon.com.br/cristal-estrela-capa-comum'
+      }
+    ],
     reviewsBrazil: [
       {
         author: "Hober Caminhas Fasciani",
@@ -116,6 +135,18 @@ Think about it: what would you do in Joana's place?`,
     price: "$61,30",
     image: joanaEnglish,
     rating: 5,
+    formats: [
+      {
+        type: 'ebook',
+        price: 'R$ 12,90',
+        buyLink: 'https://amazon.com.br/joana-love-passion-ebook'
+      },
+      {
+        type: 'capa-comum',
+        price: 'R$ 89,90',
+        buyLink: 'https://amazon.com.br/joana-love-passion-capa-comum'
+      }
+    ],
     reviewsInternational: [
       {
         author: "ANA CAROLINA",
@@ -129,12 +160,24 @@ Think about it: what would you do in Joana's place?`,
   },
   {
     id: "vamos-colorir-girafa-mimi",
-    title: "VAMOS COLORIR!: A GIRAFA MIMI GOSTA DE PRAIA E DE AMIGOS",
+    title: "VAMOS COLORIR",
     description: `Um livrinho de colorir para brincar e imaginar com Mimi, a girafa que ama praia, conchinhas e fazer novos amigos. Páginas pensadas para desenvolver coordenação, criatividade e as cores das boas memórias. Perfeito para pintar em família!`,
     price: "R$3,99",
     image: vamosColorir,
     rating: 5,
     category: "kids",
+    formats: [
+      {
+        type: 'ebook',
+        price: 'R$ 3,99',
+        buyLink: 'https://amazon.com.br/vamos-colorir-ebook'
+      },
+      {
+        type: 'capa-comum',
+        price: 'R$ 19,90',
+        buyLink: 'https://amazon.com.br/vamos-colorir-capa-comum'
+      }
+    ],
   },
   {
     id: "lagarto-dudu-colorir-jardins",
@@ -144,6 +187,18 @@ Think about it: what would you do in Joana's place?`,
     image: lagartoDudu,
     rating: 5,
     category: "kids",
+    formats: [
+      {
+        type: 'ebook',
+        price: 'R$ 8,90',
+        buyLink: 'https://amazon.com.br/lagarto-dudu-ebook'
+      },
+      {
+        type: 'capa-comum',
+        price: 'R$ 19,90',
+        buyLink: 'https://amazon.com.br/lagarto-dudu-capa-comum'
+      }
+    ],
   },
   {
     id: "festa-vagalume-beija-flor",
@@ -153,20 +208,44 @@ Think about it: what would you do in Joana's place?`,
     image: festaVagalume,
     rating: 5,
     category: "kids",
+    formats: [
+      {
+        type: 'ebook',
+        price: 'R$ 8,90',
+        buyLink: 'https://amazon.com.br/festa-vagalume-ebook'
+      },
+      {
+        type: 'capa-comum',
+        price: 'R$ 19,90',
+        buyLink: 'https://amazon.com.br/festa-vagalume-capa-comum'
+      }
+    ],
   },
   {
     id: "contos-vovo-soso",
-    title: "CONTOS DA VOVÓ SOSÔ: A Baratinha Tatá e o Bem-Querer e A Festa do Vaga-lume e do Beija-Flor (Portuguese Edition)",
+    title: "CONTOS DA VOVÓ SOSÔ (Edição em português)",
     description: `Duas histórias emocionantes que deixam a mensagem da força da solidariedade, paz e da união. A importância da família da amizade.
 A Baratinha Tatá e o Bem Querer e A Festa do Vaga-Lume e do Beija-Flor`,
     price: "R$63,16",
     image: vovoSoso,
     rating: 5,
     category: "kids",
+    formats: [
+      {
+        type: 'ebook',
+        price: 'R$ 63,16',
+        buyLink: 'https://amazon.com.br/contos-vovo-soso-ebook'
+      },
+      {
+        type: 'capa-comum',
+        price: 'R$ 89,90',
+        buyLink: 'https://amazon.com.br/contos-vovo-soso-capa-comum'
+      }
+    ],
   },
   {
     id: "cristal-star-journey-light",
-    title: "Cristal and Star Journey of Light!: spiritual evolution",
+    title: "Cristal and Star (English Edition)",
     description: `In "Cristal and Star", we are transported on a magical journey full of sweet emotions.
 
 Star and Cristal are two souls destined to live on planet Earth, where they find love and fellowship.
@@ -179,6 +258,18 @@ Come and be delighted by the lights of these two souls and embark on this unique
     price: "R$55,90",
     image: cristalStar,
     rating: 5,
+    formats: [
+      {
+        type: 'ebook',
+        price: 'R$ 12,90',
+        buyLink: 'https://amazon.com.br/cristal-star-ebook'
+      },
+      {
+        type: 'capa-comum',
+        price: 'R$ 89,90',
+        buyLink: 'https://amazon.com.br/cristal-star-capa-comum'
+      }
+    ],
     reviewsInternational: [
       {
         author: "ANA CAROLINA",
@@ -192,11 +283,23 @@ Come and be delighted by the lights of these two souls and embark on this unique
   },
   {
     id: "ecos-amor-alem-tempo",
-    title: "ECOS DO AMOR - ALÉM DO TEMPO",
+    title: "ECOS DO AMOR",
     description: "Quando o amor vive além do tempo. Lina, aos 16, carrega uma coragem rara. Amim, 36, é sereno e apaixonado. Unidos por um amor puro e profundo, enfrentam a rejeição da família, preconceitos e as amarras de uma sociedade que insiste em ditar quem pode ou não ser feliz. Mulher além de seu tempo, Lina confronta racismo, machismo e desigualdades com a mesma intensidade com que ama. Este livro é um grito de liberdade e um tributo à força do perdão — uma história emocionante que permanece muito depois do fim.",
     price: "R$ 54,00",
     image: chatgptBook,
     rating: 5,
+    formats: [
+      {
+        type: 'ebook',
+        price: 'R$ 12,90',
+        buyLink: 'https://amazon.com.br/ecos-amor-ebook'
+      },
+      {
+        type: 'capa-comum',
+        price: 'R$ 89,90',
+        buyLink: 'https://amazon.com.br/ecos-amor-capa-comum'
+      }
+    ],
     reviews: [
       {
         author: "Maristela Bhering Zottis",
@@ -271,6 +374,18 @@ Come and be delighted by the lights of these two souls and embark on this unique
     price: "R$ 32,90",
     image: baratinhaTata,
     rating: 5,
+    formats: [
+      {
+        type: 'ebook',
+        price: 'R$ 32,90',
+        buyLink: 'https://amazon.com.br/baratinha-tata-ebook'
+      },
+      {
+        type: 'capa-comum',
+        price: 'R$ 49,90',
+        buyLink: 'https://amazon.com.br/baratinha-tata-capa-comum'
+      }
+    ],
     category: "kids",
     reviews: [
       {
@@ -284,7 +399,7 @@ Come and be delighted by the lights of these two souls and embark on this unique
   },
   {
     id: "stories-nana-aya",
-    title: "STORIES BY NANA AYA",
+    title: "STORIES BY NANA AYA (English Edition)",
     description: `Stories by Nana Aya is a children's literary initiative that brings to life two heartwarming tales filled with values and essential life lessons.
 
 The first story, Beebee the Beetle, delves into the transformative power of good deeds, illustrating how acts of kindness and affection can change someone from within. This narrative showcases the profound influence of generosity and love.
@@ -294,6 +409,18 @@ can unite us and strengthen relationships that truly matter.`,
     price: "R$ 55,22",
     image: nanaAya,
     rating: 5,
+    formats: [
+      {
+        type: 'ebook',
+        price: 'R$ 54,00',
+        buyLink: 'https://amazon.com.br/stories-nana-aya-ebook'
+      },
+      {
+        type: 'capa-comum',
+        price: 'R$ 89,90',
+        buyLink: 'https://amazon.com.br/stories-nana-aya-capa-comum'
+      }
+    ],
     category: "kids",
   },
   {
@@ -306,6 +433,18 @@ Ao longo dessa jornada, Maria vive com cada parte de si: a mãe, a filha, a amig
     price: "R$ 55,90",
     image: mariaMarias,
     rating: 5,
+    formats: [
+      {
+        type: 'ebook',
+        price: 'R$ 12,90',
+        buyLink: 'https://amazon.com.br/maria-e-suas-marias-ebook'
+      },
+      {
+        type: 'capa-comum',
+        price: 'R$ 89,90',
+        buyLink: 'https://amazon.com.br/maria-e-suas-marias-capa-comum'
+      }
+    ],
     reviewsBrazil: [
       {
         author: "Nilcilene",
@@ -397,6 +536,18 @@ História gostosa e leve de ler!`,
     price: "R$ 59,90",
     image: joanaAmor,
     rating: 5,
+    formats: [
+      {
+        type: 'ebook',
+        price: 'R$ 12,90',
+        buyLink: 'https://amazon.com.br/joana-amor-paixao-ebook'
+      },
+      {
+        type: 'capa-comum',
+        price: 'R$ 89,90',
+        buyLink: 'https://amazon.com.br/joana-amor-paixao-capa-comum'
+      }
+    ],
     reviewsBrazil: [
       {
         author: "Hober Caminhas Fasciani",

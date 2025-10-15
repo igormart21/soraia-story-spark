@@ -34,7 +34,7 @@ export const AboutAuthor = () => {
               <AspectRatio ratio={3/4}>
                 <img
                   src={authorPhoto}
-                  alt="Foto da autora Soraia"
+                  alt="Foto da autora Soraia Hermes Fasciani"
                   className="h-full w-full object-cover object-top"
                   loading="lazy"
                 />
@@ -42,7 +42,7 @@ export const AboutAuthor = () => {
             </div>
           </div>
           <p className="text-lg text-muted-foreground">
-            Soraia é uma escritora apaixonada por criar histórias que tocam corações e inspiram mudanças
+            Soraia Hermes Fasciani é uma escritora apaixonada por criar histórias que tocam corações e inspiram mudanças
           </p>
           <p className="text-base text-muted-foreground/90 mt-2">
             Autora dedicada a narrativas que emocionam e inspiram transformações reais.
@@ -53,13 +53,13 @@ export const AboutAuthor = () => {
           <div className="space-y-6">
             <Card className="p-6 border-2 border-[hsl(var(--gold))]/20 bg-white/50 backdrop-blur-sm">
               <p className="text-lg leading-relaxed text-foreground">
-                Com mais de 15 anos dedicados à literatura, <strong>Soraia</strong> construiu uma carreira 
+                Com mais de 15 anos dedicados à literatura, <strong>Soraia Hermes Fasciani</strong> construiu uma carreira 
                 marcada por histórias autênticas e emocionantes. Seus livros já transformaram a vida de 
                 milhares de leitores ao redor do mundo.
               </p>
               <p className="text-lg leading-relaxed text-foreground mt-4">
                 Cada obra carrega a essência de experiências reais, transmitindo mensagens de esperança, 
-                superação e amor. Soraia acredita no poder transformador das palavras e na capacidade 
+                superação e amor. Soraia Hermes Fasciani acredita no poder transformador das palavras e na capacidade 
                 das histórias de conectar pessoas.
               </p>
             </Card>

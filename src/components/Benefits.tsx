@@ -38,7 +38,7 @@ export const Benefits = () => {
         <div className="text-center max-w-3xl mx-auto mb-14 animate-fade-in">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Por que ler
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[hsl(var(--gold))] to-[hsl(var(--warm-orange))]"> Soraia</span>?
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[hsl(var(--gold))] to-[hsl(var(--warm-orange))]"> Soraia Hermes Fasciani</span>?
           </h2>
           <p className="text-lg text-muted-foreground">
             Benefícios claros que você sente já nas primeiras páginas.
