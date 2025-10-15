@@ -2,6 +2,7 @@ import book1 from "@/assets/book-1.jpg";
 import chatgptBook from "../../assets/ChatGPT Image Oct 8, 2025, 01_37_09 PM.png";
 import book2 from "@/assets/book-2.jpg";
 import baratinhaTata from "../assets/baratinha-tata.png";
+import casaBalasAninha from "../assets/casa-balas-aninha.png";
 import nanaAya from "../../assets/ChatGPT Image Oct 8, 2025, 04_53_56 PM.png";
 import mariaMarias from "../../assets/f25717cb-e11c-4bbd-8274-1e9aa264b737.png";
 import joanaAmor from "../../assets/ChatGPT Image Oct 8, 2025, 05_38_27 PM.png";
@@ -375,6 +376,27 @@ Come and be delighted by the lights of these two souls and embark on this unique
         date: "12 de maio de 2025",
         content: "Livro maravilhoso para a criançada",
       },
+    ],
+  },
+  {
+    id: "casa-balas-aninha",
+    title: "A CASA DE BALAS DA ANINHA",
+    description: `Uma história mágica da Vovó Soso que encanta crianças e adultos. Aninha vive em uma casa especial feita de doces e balas, onde a magia acontece todos os dias. Com sua casa de gengibre decorada com balas coloridas, Aninha recebe visitas de crianças curiosas que descobrem o poder da amizade e da generosidade. Uma narrativa doce e envolvente que ensina valores importantes através de uma aventura açucarada e cheia de cor.`,
+    price: "R$ 19,90",
+    image: casaBalasAninha,
+    rating: 5,
+    category: "kids",
+    formats: [
+      {
+        type: 'ebook',
+        price: 'R$ 19,90',
+        buyLink: 'https://amazon.com.br/casa-balas-aninha-ebook'
+      },
+      {
+        type: 'capa-comum',
+        price: 'R$ 39,90',
+        buyLink: 'https://amazon.com.br/casa-balas-aninha-capa-comum'
+      }
     ],
   },
   {
