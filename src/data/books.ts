@@ -381,7 +381,9 @@ Come and be delighted by the lights of these two souls and embark on this unique
   {
     id: "casa-balas-aninha",
     title: "A CASA DE BALAS DA ANINHA",
-    description: `Uma história mágica da Vovó Soso que encanta crianças e adultos. Aninha vive em uma casa especial feita de doces e balas, onde a magia acontece todos os dias. Com sua casa de gengibre decorada com balas coloridas, Aninha recebe visitas de crianças curiosas que descobrem o poder da amizade e da generosidade. Uma narrativa doce e envolvente que ensina valores importantes através de uma aventura açucarada e cheia de cor.`,
+    description: `Aninha é uma garotinha de cinco anos que ganha da vovó Luísa um presente simplesmente mágico: uma casa feita de balas e chocolates! Com telhado de chocolate, janelas doces e um chão crocante, a casinha encanta todas as crianças da rua.
+Mas quando a inveja de uma menina ameaça derreter toda aquela doçura, surge uma fada madrinha para ensinar a Aninha uma lição valiosa: o verdadeiro doce da vida não vem do açúcar, e sim da amizade, da generosidade e do amor.
+Uma história encantadora e colorida que mostra às crianças o valor de dividir e o poder da bondade — porque o coração é o ingrediente mais doce de todos!`,
     price: "R$ 19,90",
     image: casaBalasAninha,
     rating: 5,
