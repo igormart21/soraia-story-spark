@@ -616,37 +616,4 @@ História gostosa e leve de ler!`,
       },
     ],
   },
-  {
-    id: "cristal-star-journey-light",
-    title: "Cristal and Star (English Edition)",
-    description: `In "Cristal and Star", we are transported on a magical journey full of sweet emotions.
-
-Star and Cristal are two souls destined to live on planet Earth, where they find love and fellowship.
-
-In this passionate novel, Soraia Hermes Fasciani leads us to reflect on the power of forgiveness and the beauty of true love.
-
-A story that involves us from the first page and inspires us to live each emotion deeply.
-
-Come and be delighted by the lights of these two souls and embark on this unique and exciting journey.`,
-    price: "R$55,90",
-    image: cristalStar,
-    rating: 5,
-    formats: [
-      {
-        type: 'ebook',
-        price: 'R$ 12,90',
-        buyLink: 'https://amazon.com.br/cristal-star-ebook'
-      }
-    ],
-    reviewsInternational: [
-      {
-        author: "ANA CAROLINA",
-        rating: 5,
-        title: "Please read",
-        date: "2 de abril de 2025",
-        country: "Canadá",
-        content: "Cristal and Star is a lovely book.",
-      },
-    ],
-  },
 ];
