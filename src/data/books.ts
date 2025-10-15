@@ -277,7 +277,7 @@ Come and be delighted by the lights of these two souls and embark on this unique
       },
       {
         type: 'capa-comum',
-        price: 'R$ 89,90',
+        price: 'R$ 89,61',
         buyLink: 'https://amazon.com.br/ecos-amor-capa-comum'
       }
     ],
