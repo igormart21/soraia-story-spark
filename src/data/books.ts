@@ -140,11 +140,6 @@ Think about it: what would you do in Joana's place?`,
         type: 'ebook',
         price: 'R$ 12,90',
         buyLink: 'https://amazon.com.br/joana-love-passion-ebook'
-      },
-      {
-        type: 'capa-comum',
-        price: 'R$ 89,90',
-        buyLink: 'https://amazon.com.br/joana-love-passion-capa-comum'
       }
     ],
     reviewsInternational: [
@@ -171,11 +166,6 @@ Think about it: what would you do in Joana's place?`,
         type: 'ebook',
         price: 'R$ 3,99',
         buyLink: 'https://amazon.com.br/vamos-colorir-ebook'
-      },
-      {
-        type: 'capa-comum',
-        price: 'R$ 19,90',
-        buyLink: 'https://amazon.com.br/vamos-colorir-capa-comum'
       }
     ],
   },
@@ -192,11 +182,6 @@ Think about it: what would you do in Joana's place?`,
         type: 'ebook',
         price: 'R$ 8,90',
         buyLink: 'https://amazon.com.br/lagarto-dudu-ebook'
-      },
-      {
-        type: 'capa-comum',
-        price: 'R$ 19,90',
-        buyLink: 'https://amazon.com.br/lagarto-dudu-capa-comum'
       }
     ],
   },
@@ -263,11 +248,6 @@ Come and be delighted by the lights of these two souls and embark on this unique
         type: 'ebook',
         price: 'R$ 12,90',
         buyLink: 'https://amazon.com.br/cristal-star-ebook'
-      },
-      {
-        type: 'capa-comum',
-        price: 'R$ 89,90',
-        buyLink: 'https://amazon.com.br/cristal-star-capa-comum'
       }
     ],
     reviewsInternational: [
@@ -412,13 +392,8 @@ can unite us and strengthen relationships that truly matter.`,
     formats: [
       {
         type: 'ebook',
-        price: 'R$ 54,00',
+        price: 'R$ 12,90',
         buyLink: 'https://amazon.com.br/stories-nana-aya-ebook'
-      },
-      {
-        type: 'capa-comum',
-        price: 'R$ 89,90',
-        buyLink: 'https://amazon.com.br/stories-nana-aya-capa-comum'
       }
     ],
     category: "kids",
