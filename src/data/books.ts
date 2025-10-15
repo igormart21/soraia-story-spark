@@ -440,7 +440,7 @@ Ao longo dessa jornada, Maria vive com cada parte de si: a mãe, a filha, a amig
       },
       {
         type: 'capa-comum',
-        price: 'R$ 89,90',
+        price: 'R$ 55,90',
         buyLink: 'https://amazon.com.br/maria-e-suas-marias-capa-comum'
       }
     ],
