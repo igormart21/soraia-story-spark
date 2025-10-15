@@ -1,7 +1,7 @@
 import book1 from "@/assets/book-1.jpg";
 import chatgptBook from "../../assets/ChatGPT Image Oct 8, 2025, 01_37_09 PM.png";
 import book2 from "@/assets/book-2.jpg";
-import baratinhaTata from "../../assets/ChatGPT Image Oct 8, 2025, 04_30_48 PM.png";
+import baratinhaTata from "../../assets/baratinha-tata.png";
 import nanaAya from "../../assets/ChatGPT Image Oct 8, 2025, 04_53_56 PM.png";
 import mariaMarias from "../../assets/f25717cb-e11c-4bbd-8274-1e9aa264b737.png";
 import joanaAmor from "../../assets/ChatGPT Image Oct 8, 2025, 05_38_27 PM.png";
