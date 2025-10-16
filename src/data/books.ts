@@ -66,7 +66,7 @@ Venha se encantar com as luzes dessas duas almas e embarque nessa viagem única 
       {
         type: 'ebook',
         price: 'R$ 12,90',
-        buyLink: 'https://amazon.com.br/cristal-estrela-ebook'
+        buyLink: 'https://pay.hotmart.com/B93674962S'
       },
       {
         type: 'capa-comum',
@@ -140,7 +140,7 @@ Think about it: what would you do in Joana's place?`,
       {
         type: 'ebook',
         price: 'R$ 12,90',
-        buyLink: 'https://amazon.com.br/joana-love-passion-ebook'
+        buyLink: 'https://pay.hotmart.com/F93690546Q'
       }
     ],
     reviewsInternational: [
@@ -248,7 +248,7 @@ Come and be delighted by the lights of these two souls and embark on this unique
       {
         type: 'ebook',
         price: 'R$ 12,90',
-        buyLink: 'https://amazon.com.br/cristal-star-ebook'
+        buyLink: 'https://pay.hotmart.com/B93674962S'
       }
     ],
     reviewsInternational: [
@@ -273,7 +273,7 @@ Come and be delighted by the lights of these two souls and embark on this unique
       {
         type: 'ebook',
         price: 'R$ 12,90',
-        buyLink: 'https://amazon.com.br/ecos-amor-ebook'
+        buyLink: 'https://pay.hotmart.com/H102455422F'
       },
       {
         type: 'capa-comum',
@@ -359,7 +359,7 @@ Come and be delighted by the lights of these two souls and embark on this unique
       {
         type: 'ebook',
         price: 'R$ 9,90',
-        buyLink: 'https://amazon.com.br/baratinha-tata-ebook'
+        buyLink: 'https://pay.hotmart.com/R102456230B'
       },
       {
         type: 'capa-comum',
@@ -392,7 +392,7 @@ Uma história encantadora e colorida que mostra às crianças o valor de dividir
       {
         type: 'ebook',
         price: 'R$ 9,90',
-        buyLink: 'https://amazon.com.br/casa-balas-aninha-ebook'
+        buyLink: 'https://pay.hotmart.com/O102456369O'
       },
       {
         type: 'capa-comum',
@@ -436,7 +436,7 @@ Ao longo dessa jornada, Maria vive com cada parte de si: a mãe, a filha, a amig
       {
         type: 'ebook',
         price: 'R$ 12,90',
-        buyLink: 'https://amazon.com.br/maria-e-suas-marias-ebook'
+        buyLink: 'https://pay.hotmart.com/A102455834N'
       },
       {
         type: 'capa-comum',
@@ -539,7 +539,7 @@ História gostosa e leve de ler!`,
       {
         type: 'ebook',
         price: 'R$ 12,90',
-        buyLink: 'https://amazon.com.br/joana-amor-paixao-ebook'
+        buyLink: 'https://pay.hotmart.com/F93690546Q'
       },
       {
         type: 'capa-comum',
