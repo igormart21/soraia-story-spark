@@ -70,7 +70,7 @@ Venha se encantar com as luzes dessas duas almas e embarque nessa viagem única 
       },
       {
         type: 'capa-comum',
-        price: 'R$ 89,90',
+        price: 'R$ 49,90',
         buyLink: 'https://amazon.com.br/cristal-estrela-capa-comum'
       }
     ],
@@ -165,7 +165,7 @@ Think about it: what would you do in Joana's place?`,
     formats: [
       {
         type: 'ebook',
-        price: 'R$ 3,99',
+        price: 'R$ 9,90',
         buyLink: 'https://amazon.com.br/vamos-colorir-ebook'
       }
     ],
@@ -181,7 +181,7 @@ Think about it: what would you do in Joana's place?`,
     formats: [
       {
         type: 'ebook',
-        price: 'R$ 8,90',
+        price: 'R$ 9,90',
         buyLink: 'https://amazon.com.br/lagarto-dudu-ebook'
       }
     ],
@@ -197,12 +197,12 @@ Think about it: what would you do in Joana's place?`,
     formats: [
       {
         type: 'ebook',
-        price: 'R$ 8,90',
+        price: 'R$ 9,90',
         buyLink: 'https://amazon.com.br/festa-vagalume-ebook'
       },
       {
         type: 'capa-comum',
-        price: 'R$ 19,90',
+        price: 'R$ 27,90',
         buyLink: 'https://amazon.com.br/festa-vagalume-capa-comum'
       }
     ],
@@ -219,12 +219,12 @@ A Baratinha Tatá e o Bem Querer e A Festa do Vaga-Lume e do Beija-Flor`,
     formats: [
       {
         type: 'ebook',
-        price: 'R$ 63,16',
+        price: 'R$ 9,90',
         buyLink: 'https://amazon.com.br/contos-vovo-soso-ebook'
       },
       {
         type: 'capa-comum',
-        price: 'R$ 89,90',
+        price: 'R$ 54,90',
         buyLink: 'https://amazon.com.br/contos-vovo-soso-capa-comum'
       }
     ],
@@ -277,7 +277,7 @@ Come and be delighted by the lights of these two souls and embark on this unique
       },
       {
         type: 'capa-comum',
-        price: 'R$ 89,61',
+        price: 'R$ 54,90',
         buyLink: 'https://amazon.com.br/ecos-amor-capa-comum'
       }
     ],
@@ -358,12 +358,12 @@ Come and be delighted by the lights of these two souls and embark on this unique
     formats: [
       {
         type: 'ebook',
-        price: 'R$ 32,90',
+        price: 'R$ 9,90',
         buyLink: 'https://amazon.com.br/baratinha-tata-ebook'
       },
       {
         type: 'capa-comum',
-        price: 'R$ 49,90',
+        price: 'R$ 27,90',
         buyLink: 'https://amazon.com.br/baratinha-tata-capa-comum'
       }
     ],
@@ -391,12 +391,12 @@ Uma história encantadora e colorida que mostra às crianças o valor de dividir
     formats: [
       {
         type: 'ebook',
-        price: 'R$ 19,90',
+        price: 'R$ 9,90',
         buyLink: 'https://amazon.com.br/casa-balas-aninha-ebook'
       },
       {
         type: 'capa-comum',
-        price: 'R$ 39,90',
+        price: 'R$ 27,90',
         buyLink: 'https://amazon.com.br/casa-balas-aninha-capa-comum'
       }
     ],
@@ -416,7 +416,7 @@ can unite us and strengthen relationships that truly matter.`,
     formats: [
       {
         type: 'ebook',
-        price: 'R$ 12,90',
+        price: 'R$ 9,90',
         buyLink: 'https://amazon.com.br/stories-nana-aya-ebook'
       }
     ],
@@ -440,7 +440,7 @@ Ao longo dessa jornada, Maria vive com cada parte de si: a mãe, a filha, a amig
       },
       {
         type: 'capa-comum',
-        price: 'R$ 55,90',
+        price: 'R$ 49,90',
         buyLink: 'https://amazon.com.br/maria-e-suas-marias-capa-comum'
       }
     ],
@@ -543,7 +543,7 @@ História gostosa e leve de ler!`,
       },
       {
         type: 'capa-comum',
-        price: 'R$ 89,90',
+        price: 'R$ 49,90',
         buyLink: 'https://amazon.com.br/joana-amor-paixao-capa-comum'
       }
     ],
