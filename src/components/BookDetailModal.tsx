@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -15,8 +15,15 @@ interface BookDetailModalProps {
 
 export const BookDetailModal = ({ book, isOpen, onClose }: BookDetailModalProps) => {
   const [selectedFormat, setSelectedFormat] = useState(
-    book?.formats?.[0] || { type: 'ebook', price: book?.price || 'R$ 0,00', buyLink: '#' }
+    book?.formats?.[0] || { type: 'ebook', price: 'R$ 0,00', buyLink: '#' }
   );
+
+  // Atualizar selectedFormat quando o livro mudar
+  useEffect(() => {
+    if (book?.formats && book.formats.length > 0) {
+      setSelectedFormat(book.formats[0]);
+    }
+  }, [book]);
 
   if (!book) return null;
 
