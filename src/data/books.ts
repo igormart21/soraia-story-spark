@@ -44,7 +44,7 @@ export interface Book {
 export const books: Book[] = [
   {
     id: "cristal-estrela-viagem-luz",
-    title: "CRISTAL E ESTRELA (Edição em português)",
+    title: "CRISTAL E ESTRELA",
     description: `Em "Cristal e Estrela", somos transportados para uma jornada mágica repleta de emoções encantadoras.
 
 Estrela e Cristal são duas almas destinadas a viverem no planeta Terra, onde encontram o amor e a fraternidade.
@@ -144,7 +144,7 @@ Venha se encantar com as luzes dessas duas almas e embarque nessa viagem única 
   },
   {
     id: "contos-vovo-soso",
-    title: "CONTOS DA VOVÓ SOSÔ (Edição em português)",
+    title: "CONTOS DA VOVÓ SOSÔ",
     description: `Duas histórias emocionantes que deixam a mensagem da força da solidariedade, paz e da união. A importância da família da amizade.
 A Baratinha Tatá e o Bem Querer e A Festa do Vaga-Lume e do Beija-Flor`,
     price: "R$63,16",
