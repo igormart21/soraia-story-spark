@@ -44,7 +44,7 @@ export interface Book {
 export const books: Book[] = [
   {
     id: "cristal-estrela-viagem-luz",
-    title: "CRISTAL E ESTRELA",
+    title: "CRISTAL E ESTRELA: VIAGEM DE LUZ",
     description: `Em "Cristal e Estrela", somos transportados para uma jornada mágica repleta de emoções encantadoras.
 
 Estrela e Cristal são duas almas destinadas a viverem no planeta Terra, onde encontram o amor e a fraternidade.
@@ -144,7 +144,7 @@ Venha se encantar com as luzes dessas duas almas e embarque nessa viagem única 
   },
   {
     id: "contos-vovo-soso",
-    title: "CONTOS DA VOVÓ SOSÔ",
+    title: "CONTOS DA VOVÓ SOSÔ: A Baratinha Tatá e o Bem-Querer e A Festa do Vaga-lume e do Beija-Flor",
     description: `Duas histórias emocionantes que deixam a mensagem da força da solidariedade, paz e da união. A importância da família da amizade.
 A Baratinha Tatá e o Bem Querer e A Festa do Vaga-Lume e do Beija-Flor`,
     price: "R$63,16",
@@ -166,7 +166,7 @@ A Baratinha Tatá e o Bem Querer e A Festa do Vaga-Lume e do Beija-Flor`,
   },
   {
     id: "ecos-amor-alem-tempo",
-    title: "ECOS DO AMOR",
+    title: "ECOS DO AMOR: ALÉM DO TEMPO",
     description: "Quando o amor vive além do tempo. Lina, aos 16, carrega uma coragem rara. Amim, 36, é sereno e apaixonado. Unidos por um amor puro e profundo, enfrentam a rejeição da família, preconceitos e as amarras de uma sociedade que insiste em ditar quem pode ou não ser feliz. Mulher além de seu tempo, Lina confronta racismo, machismo e desigualdades com a mesma intensidade com que ama. Este livro é um grito de liberdade e um tributo à força do perdão — uma história emocionante que permanece muito depois do fim.",
     price: "R$ 54,00",
     image: chatgptBook,
@@ -404,7 +404,7 @@ Ao longo dessa jornada, Maria vive com cada parte de si: a mãe, a filha, a amig
   },
   {
     id: "joana-amor-paixao",
-    title: "Joana, amor e paixão",
+    title: "JOANA: AMOR E PAIXÃO",
     description: `Joana amor e paixão é a história de uma jovem do nordeste brasileiro.
 Ela trabalhava na coleta do café e da cana.
 Era difícil .Mas ela amava a vida. Temperava os dias com alegria e fé..
