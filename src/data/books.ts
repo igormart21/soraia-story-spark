@@ -133,7 +133,7 @@ Venha se encantar com as luzes dessas duas almas e embarque nessa viagem única 
       {
         type: 'ebook',
         price: 'R$ 9,90',
-        buyLink: 'https://amazon.com.br/festa-vagalume-ebook'
+        buyLink: 'https://pay.hotmart.com/H102456060H?off=pbzrw4y8'
       },
       {
         type: 'capa-comum',
