@@ -52,13 +52,13 @@ const Index = () => {
             </p>
           </div>
 
-          {/* Romance Section */}
+          {/* Romances Section */}
           <div className="max-w-7xl mx-auto mb-8">
             <div className="relative rounded-xl overflow-hidden shadow-[var(--shadow-warm)] mb-6 sm:mb-8">
-              <img src={romanceBanner} alt="Categoria Romance" className="w-full h-32 sm:h-48 md:h-64 object-cover" />
+              <img src={romanceBanner} alt="Categoria Romances" className="w-full h-32 sm:h-48 md:h-64 object-cover" />
               <div className="absolute inset-0 bg-black/20" />
               <div className="absolute inset-0 flex items-center justify-center">
-                <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white drop-shadow">Romance</h3>
+                <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white drop-shadow">Romances</h3>
               </div>
             </div>
             
