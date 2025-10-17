@@ -267,7 +267,11 @@ A Baratinha Tatá e o Bem Querer e A Festa do Vaga-Lume e do Beija-Flor`,
   {
     id: "baratinha-tata-bem-querer",
     title: "A BARATINHA TATÁ E O BEM-QUERER",
-    description: `Tata, uma baratinha, acorda triste e se olha no espelho, questionando sua aparência e falta de amigos. Influenciada por lembranças do avô sobre o poder do querer, decide explorar isso. Ela encontra seu amigo, o ratão, que a aconselha a fazer boas ações. Tata começa a ajudar outros animais, como a formiga, o coelhinho, o besouro, a lagartixa e a girafa, e descobre que isso a faz feliz. Apesar das críticas de amigas fofoqueiras, ela continua ajudando. No final, Tata percebe que a verdadeira beleza vem da bondade e é celebrada pelos amigos em seu aniversário, confirmando que boas ações trazem verdadeira felicidade e amizade.`,
+    description: `Tatá, uma baratinha, acorda triste e se olha no espelho, questionando sua aparência e a falta de amigos. Influenciada pelas lembranças do avô sobre o poder do querer, decide explorar esse ensinamento. Ela encontra seu amigo, o Ratão, que a aconselha a praticar boas ações.
+
+Tatá começa a ajudar outros animais — como a formiga, o coelhinho, o besouro, a lagartixa e a girafa — e descobre que isso a faz feliz. Apesar das críticas de amigas fofoqueiras, ela continua ajudando.
+
+No final, Tatá percebe que a verdadeira beleza vem da bondade e é celebrada pelos amigos em seu aniversário, confirmando que boas ações trazem a verdadeira felicidade e amizade.`,
     price: "R$ 32,90",
     image: baratinhaTata,
     rating: 5,
