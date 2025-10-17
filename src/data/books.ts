@@ -3,16 +3,13 @@ import chatgptBook from "../../assets/ChatGPT Image Oct 8, 2025, 01_37_09 PM.png
 import book2 from "@/assets/book-2.jpg";
 import baratinhaTata from "../assets/baratinha-tata.png";
 import casaBalasAninha from "../assets/casa-balas-aninha.png";
-import nanaAya from "../../assets/ChatGPT Image Oct 8, 2025, 04_53_56 PM.png";
 import mariaMarias from "../../assets/f25717cb-e11c-4bbd-8274-1e9aa264b737.png";
 import joanaAmor from "../../assets/ChatGPT Image Oct 8, 2025, 05_38_27 PM.png";
 import cristalEstrela from "../../assets/ChatGPT Image Oct 8, 2025, 06_07_35 PM.png";
-import cristalStar from "../../assets/ChatGPT Image Oct 8, 2025, 06_21_56 PM.png";
 import vovoSoso from "../../assets/ChatGPT Image Oct 8, 2025, 06_29_52 PM.png";
 import festaVagalume from "../../assets/ChatGPT Image Oct 9, 2025, 06_26_38 AM.png";
 import lagartoDudu from "../../assets/ChatGPT Image Oct 9, 2025, 06_32_48 AM.png";
 import vamosColorir from "../../assets/ChatGPT Image Oct 9, 2025, 07_31_49 AM.png";
-import joanaEnglish from "../../assets/ChatGPT Image Oct 9, 2025, 07_20_37 AM.png";
 import infantilBanner from "@/assets/hero-soraia.jpg";
 import romanceBanner from "@/assets/romance-banner.png";
 import book3 from "@/assets/book-3.jpg";
@@ -127,34 +124,6 @@ Venha se encantar com as luzes dessas duas almas e embarque nessa viagem única 
     ],
   },
   {
-    id: "joana-love-passion-english",
-    title: "Joana, love and passion (English Edition)",
-    description: `Joana, love and passion is a pleasant romance to read.
-It tells the story of this beautiful girl who, after meeting her soul mate, her life changed!
-She used to live in a simple place, work really hard, love and dance; had friends and, despite suffering and prejudice, she won!
-Think about it: what would you do in Joana's place?`,
-    price: "$61,30",
-    image: joanaEnglish,
-    rating: 5,
-    formats: [
-      {
-        type: 'ebook',
-        price: 'R$ 12,90',
-        buyLink: 'https://pay.hotmart.com/F93690546Q'
-      }
-    ],
-    reviewsInternational: [
-      {
-        author: "ANA CAROLINA",
-        rating: 5,
-        title: "Beautiful Romance",
-        date: "2 de abril de 2025",
-        country: "Canadá",
-        content: "Beautiful romance. One of my favourite books.",
-      },
-    ],
-  },
-  {
     id: "vamos-colorir-girafa-mimi",
     title: "VAMOS COLORIR",
     description: `Um livrinho de colorir para brincar e imaginar com Mimi, a girafa que ama praia, conchinhas e fazer novos amigos. Páginas pensadas para desenvolver coordenação, criatividade e as cores das boas memórias. Perfeito para pintar em família!`,
@@ -227,39 +196,6 @@ A Baratinha Tatá e o Bem Querer e A Festa do Vaga-Lume e do Beija-Flor`,
         price: 'R$ 54,90',
         buyLink: 'https://amazon.com.br/contos-vovo-soso-capa-comum'
       }
-    ],
-  },
-  {
-    id: "cristal-star-journey-light",
-    title: "Cristal and Star (English Edition)",
-    description: `In "Cristal and Star", we are transported on a magical journey full of sweet emotions.
-
-Star and Cristal are two souls destined to live on planet Earth, where they find love and fellowship.
-
-In this passionate novel, Soraia Hermes Fasciani leads us to reflect on the power of forgiveness and the beauty of true love.
-
-A story that involves us from the first page and inspires us to live each emotion deeply.
-
-Come and be delighted by the lights of these two souls and embark on this unique and exciting journey.`,
-    price: "R$55,90",
-    image: cristalStar,
-    rating: 5,
-    formats: [
-      {
-        type: 'ebook',
-        price: 'R$ 12,90',
-        buyLink: 'https://pay.hotmart.com/B93674962S'
-      }
-    ],
-    reviewsInternational: [
-      {
-        author: "ANA CAROLINA",
-        rating: 5,
-        title: "Please read",
-        date: "2 de abril de 2025",
-        country: "Canadá",
-        content: "Cristal and Star is a lovely book.",
-      },
     ],
   },
   {
@@ -400,27 +336,6 @@ Uma história encantadora e colorida que mostra às crianças o valor de dividir
         buyLink: 'https://amazon.com.br/casa-balas-aninha-capa-comum'
       }
     ],
-  },
-  {
-    id: "stories-nana-aya",
-    title: "STORIES BY NANA AYA (English Edition)",
-    description: `Stories by Nana Aya is a children's literary initiative that brings to life two heartwarming tales filled with values and essential life lessons.
-
-The first story, Beebee the Beetle, delves into the transformative power of good deeds, illustrating how acts of kindness and affection can change someone from within. This narrative showcases the profound influence of generosity and love.
-
-The second story, Animal Party, celebrates the bonds of friendship and family, emphasizing how overcoming differences
-can unite us and strengthen relationships that truly matter.`,
-    price: "R$ 55,22",
-    image: nanaAya,
-    rating: 5,
-    formats: [
-      {
-        type: 'ebook',
-        price: 'R$ 9,90',
-        buyLink: 'https://amazon.com.br/stories-nana-aya-ebook'
-      }
-    ],
-    category: "kids",
   },
   {
     id: "maria-e-suas-marias",
