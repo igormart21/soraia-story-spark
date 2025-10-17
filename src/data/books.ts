@@ -418,7 +418,7 @@ Ao longo dessa jornada, Maria vive com cada parte de si: a mãe, a filha, a amig
   },
   {
     id: "joana-amor-paixao",
-    title: "JOANA: AMOR E PAIXÃO",
+    title: "Joana, amor e paixão",
     description: `Joana amor e paixão é a história de uma jovem do nordeste brasileiro.
 Ela trabalhava na coleta do café e da cana.
 Era difícil .Mas ela amava a vida. Temperava os dias com alegria e fé..
