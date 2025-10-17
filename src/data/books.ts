@@ -66,7 +66,7 @@ Venha se encantar com as luzes dessas duas almas e embarque nessa viagem única 
       {
         type: 'capa-comum',
         price: 'R$ 49,90',
-        buyLink: 'https://amazon.com.br/cristal-estrela-capa-comum'
+        buyLink: 'https://pay.hotmart.com/S102461538V'
       }
     ],
     reviewsBrazil: [
@@ -138,7 +138,7 @@ Venha se encantar com as luzes dessas duas almas e embarque nessa viagem única 
       {
         type: 'capa-comum',
         price: 'R$ 27,90',
-        buyLink: 'https://amazon.com.br/festa-vagalume-capa-comum'
+        buyLink: 'https://pay.hotmart.com/Q102466666Q'
       }
     ],
   },
@@ -160,7 +160,7 @@ A Baratinha Tatá e o Bem Querer e A Festa do Vaga-Lume e do Beija-Flor`,
       {
         type: 'capa-comum',
         price: 'R$ 54,90',
-        buyLink: 'https://amazon.com.br/contos-vovo-soso-capa-comum'
+        buyLink: 'https://pay.hotmart.com/B102466680Q'
       }
     ],
   },
@@ -180,7 +180,7 @@ A Baratinha Tatá e o Bem Querer e A Festa do Vaga-Lume e do Beija-Flor`,
       {
         type: 'capa-comum',
         price: 'R$ 54,90',
-        buyLink: 'https://amazon.com.br/ecos-amor-capa-comum'
+        buyLink: 'https://pay.hotmart.com/O102461811V'
       }
     ],
     reviews: [
@@ -280,7 +280,7 @@ A Baratinha Tatá e o Bem Querer e A Festa do Vaga-Lume e do Beija-Flor`,
       {
         type: 'capa-comum',
         price: 'R$ 27,90',
-        buyLink: 'https://amazon.com.br/baratinha-tata-capa-comum'
+        buyLink: 'https://pay.hotmart.com/C102466692B?bid=1760720343722'
       }
     ],
     category: "kids",
@@ -313,7 +313,7 @@ Uma história encantadora e colorida que mostra às crianças o valor de dividir
       {
         type: 'capa-comum',
         price: 'R$ 27,90',
-        buyLink: 'https://amazon.com.br/casa-balas-aninha-capa-comum'
+        buyLink: 'https://pay.hotmart.com/S102466712J'
       }
     ],
   },
@@ -336,7 +336,7 @@ Ao longo dessa jornada, Maria vive com cada parte de si: a mãe, a filha, a amig
       {
         type: 'capa-comum',
         price: 'R$ 49,90',
-        buyLink: 'https://amazon.com.br/maria-e-suas-marias-capa-comum'
+        buyLink: 'https://pay.hotmart.com/H102461860H'
       }
     ],
     reviewsBrazil: [
@@ -439,7 +439,7 @@ História gostosa e leve de ler!`,
       {
         type: 'capa-comum',
         price: 'R$ 49,90',
-        buyLink: 'https://amazon.com.br/joana-amor-paixao-capa-comum'
+        buyLink: 'https://pay.hotmart.com/B102466648R'
       }
     ],
     reviewsBrazil: [
