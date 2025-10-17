@@ -44,7 +44,7 @@ export interface Book {
 export const books: Book[] = [
   {
     id: "cristal-estrela-viagem-luz",
-    title: "CRISTAL E ESTRELA: VIAGEM DE LUZ",
+    title: "CRISTAL E ESTRELA: Viagem de Luz",
     description: `Em "Cristal e Estrela", somos transportados para uma jornada mágica repleta de emoções encantadoras.
 
 Estrela e Cristal são duas almas destinadas a viverem no planeta Terra, onde encontram o amor e a fraternidade.
