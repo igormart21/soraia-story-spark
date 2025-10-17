@@ -8,8 +8,6 @@ import joanaAmor from "../../assets/ChatGPT Image Oct 8, 2025, 05_38_27 PM.png";
 import cristalEstrela from "../../assets/ChatGPT Image Oct 8, 2025, 06_07_35 PM.png";
 import vovoSoso from "../../assets/ChatGPT Image Oct 8, 2025, 06_29_52 PM.png";
 import festaVagalume from "../../assets/ChatGPT Image Oct 9, 2025, 06_26_38 AM.png";
-import lagartoDudu from "../../assets/ChatGPT Image Oct 9, 2025, 06_32_48 AM.png";
-import vamosColorir from "../../assets/ChatGPT Image Oct 9, 2025, 07_31_49 AM.png";
 import infantilBanner from "@/assets/hero-soraia.jpg";
 import romanceBanner from "@/assets/romance-banner.png";
 import book3 from "@/assets/book-3.jpg";
@@ -121,38 +119,6 @@ Venha se encantar com as luzes dessas duas almas e embarque nessa viagem única 
         date: "7 de maio de 2024",
         content: "A história de Cristal e Estrela nos ensina muito sobre bondade, gratidão e amor, além de emocionar bastante. Livro lindo.",
       },
-    ],
-  },
-  {
-    id: "vamos-colorir-girafa-mimi",
-    title: "VAMOS COLORIR",
-    description: `Um livrinho de colorir para brincar e imaginar com Mimi, a girafa que ama praia, conchinhas e fazer novos amigos. Páginas pensadas para desenvolver coordenação, criatividade e as cores das boas memórias. Perfeito para pintar em família!`,
-    price: "R$3,99",
-    image: vamosColorir,
-    rating: 5,
-    category: "kids",
-    formats: [
-      {
-        type: 'ebook',
-        price: 'R$ 9,90',
-        buyLink: 'https://amazon.com.br/vamos-colorir-ebook'
-      }
-    ],
-  },
-  {
-    id: "lagarto-dudu-colorir-jardins",
-    title: "O LAGARTO DUDU QUE QUERIA COLORIR OS JARDINS",
-    description: `Dudu é um pequeno lagarto que sonha alto: encher os jardins de cor. Com coragem, gentileza e obediência, ele descobre que quando seguimos o bem, asas nascem onde menos esperamos. Transformado em borboleta, Dudu aprende que cada gesto de bondade pode florescer um mundo inteiro. Uma fábula terna sobre sonhos, esforço e merecimento.`,
-    price: "R$3,99",
-    image: lagartoDudu,
-    rating: 5,
-    category: "kids",
-    formats: [
-      {
-        type: 'ebook',
-        price: 'R$ 9,90',
-        buyLink: 'https://amazon.com.br/lagarto-dudu-ebook'
-      }
     ],
   },
   {
