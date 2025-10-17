@@ -166,7 +166,7 @@ A Baratinha Tatá e o Bem Querer e A Festa do Vaga-Lume e do Beija-Flor`,
   },
   {
     id: "ecos-amor-alem-tempo",
-    title: "ECOS DO AMOR: ALÉM DO TEMPO",
+    title: "ECOS DO AMOR ALÉM DO TEMPO: ALÉM DO TEMPO",
     description: "Quando o amor vive além do tempo. Lina, aos 16, carrega uma coragem rara. Amim, 36, é sereno e apaixonado. Unidos por um amor puro e profundo, enfrentam a rejeição da família, preconceitos e as amarras de uma sociedade que insiste em ditar quem pode ou não ser feliz. Mulher além de seu tempo, Lina confronta racismo, machismo e desigualdades com a mesma intensidade com que ama. Este livro é um grito de liberdade e um tributo à força do perdão — uma história emocionante que permanece muito depois do fim.",
     price: "R$ 54,00",
     image: chatgptBook,
