@@ -155,7 +155,7 @@ A Baratinha Tatá e o Bem Querer e A Festa do Vaga-Lume e do Beija-Flor`,
       {
         type: 'ebook',
         price: 'R$ 9,90',
-        buyLink: 'https://amazon.com.br/contos-vovo-soso-ebook'
+        buyLink: 'https://pay.hotmart.com/S102456162Y'
       },
       {
         type: 'capa-comum',
