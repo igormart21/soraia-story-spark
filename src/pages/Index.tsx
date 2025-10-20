@@ -10,6 +10,7 @@ import { Benefits } from "@/components/Benefits";
 import { FAQ } from "@/components/FAQ";
 import { CTASection } from "@/components/CTASection";
 import { SocialMedia } from "@/components/SocialMedia";
+import { MerchSection } from "@/components/MerchSection";
 import { books, Book } from "@/data/books";
 import infantilBanner from "@/assets/hero-soraia.jpg";
 import romanceBanner from "@/assets/romance-banner.png";
@@ -100,6 +101,8 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      <MerchSection />
 
       <AboutAuthor />
 
